@@ -1,0 +1,46 @@
+<!-- inlude header-->
+<%- include('include/_header') %>
+<!--inlude header -->
+
+<!--Main Site-->
+<main class="mt-4">
+    <div class="container text-center">
+        <div class="form-title ">
+            <h2 class="text-dark">Edit Result Details</h2>
+            <span class="text-danger"> <b>Use the below form to edit existing result for student</b></span>
+        </div>
+        <!--Edit record form-->
+        <form method="POST" id="record_edit" class="form-box">
+            <input type="hidden" value="<%= result.id %>" name="id">
+            <div class="form-group mt-1">
+                <label><b>Roll No: </b></label>
+                <input type="number" name="rollno" id="rollno" class="form-control mb-1" placeholder="Enter student's rollno" value="<%= result.rollno %>" required>     
+            </div>
+            <div class="form-group mt-1">
+                <label><b>Name: </b></label>
+                <input type="text" name="name" id="name" class="form-control mb-1" placeholder="Enter student's name" value="<%= result.name %>" required>     
+            </div>
+            <div class="form-group mt-1">
+                <label><b>Date of Birth: </b></label>
+                <input type="date" name="dob" id="dob" class="form-control mb-1" placeholder="Enter student's dob" value="<%= result.dob %>" required>     
+            </div>
+            <div class="form-group mt-1">
+                <label><b>Maximum marks: </b></label>
+                <input type="number" name="maxmarks" id="maxmarks" class="form-control mb-1" placeholder="Enter Max marks" value="<%= result.maxmarks %>" required>     
+            </div>
+            <div class="form-group mt-1">
+                <label><b>Obtained marks: </b></label>
+                <input type="number" name="obtainedmarks" id="obtainedmarks" class="form-control mb-1" placeholder="Enter student's obtained marks" value="<%= result.score %>" required>     
+            </div>
+            <br/>
+            <button type="submit" class="btn btn-success">Edit Record</button>
+        </form>
+        <!--Edit record form-->
+    </div>
+</main>
+<!--Main Site-->
+
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->

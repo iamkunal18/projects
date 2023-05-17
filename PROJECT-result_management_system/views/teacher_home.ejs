@@ -1,0 +1,45 @@
+<!--inlude header-->
+<%- include('include/_header') %>
+<!--inlude header-->
+
+<!--Main Site-->
+<main class="mt-4">
+    <div class="container text-end">
+        <a href="add-record"><button class="btn btn-lg btn-primary"><b>Add New Record</b></button></a>
+    </div>
+    <div class="container">
+        <h2>total <%= results.length %> students</h2>
+        <table class="table  table-light table-hover table-stripped">
+            <thead class="table-active">
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Total Marks</th>
+                    <th>Marks Obtained</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% results.forEach((result)=>{ %>
+                    <tr>
+                        <td><%= result.rollno %></td>
+                        <td><%= result.name %></td>
+                        <td><%= result.dob %></td>
+                        <td><%= result.maxmarks %></td>
+                        <td><%= result.score %></td>
+                        <td>
+                            <a href="edit/<%= result.id %>" class="btn btn-sm btn-primary">Edit</a>
+                            <a href="delete/<%= result.id %>" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+</main>
+<!--Main Site-->
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->

@@ -1,0 +1,38 @@
+<!--inlude header-->
+<%- include('include/_header') %>
+<!--inlude header-->
+
+ <!--Main Site-->
+ <main id="site-main">
+    <div class="container text-center">
+        <!-- <div class="box-nav-d-flex justify-between">
+            <h1> Teacher Login</h1>
+            <a href="/"><i class="fas fa-angle-double-left m-4"></i>back to home page</a>
+        </div> -->
+        <div class="form-title ">
+            <h2 class="text-dark">View Result</h2>
+            <span class="text-danger"> <b>Use the below form to view your result</b></span>
+        </div>
+        <!--View result form-->
+            <form method="POST" id="student_result_view" class="form-box">
+                    <div class="form-group mt-3">
+                        <label><b>Roll No: </b></label>
+                        <input type="number" name="rollNo" id="rollNo" class="form-control mb-3" placeholder="Enter your roll no" required>     
+                    </div>
+                    <div class="form-group mt-3">
+                        <label><b>Date of Birth: </b></label>
+                        <input type="date" name="dob" id="dob" class="form-control mb-3" placeholder="Enter your date of birth" required>     
+                    </div>
+                    <span><b>Got this page by mistake?  </b> <a href="/" ><b> Go to home page</b></a></span>
+                    <br/> <br/>
+                    <button type="submit" class="btn btn-success">View Result</button>
+            </form>
+                    
+        <!--View Result form-->
+    </div>
+</main>
+<!--Main Site-->
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->

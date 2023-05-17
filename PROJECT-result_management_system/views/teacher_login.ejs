@@ -1,0 +1,34 @@
+<!--inlude header-->
+<%- include('include/_header') %>
+<!--inlude header-->
+
+ <!--Main Site-->
+ <main id="site-main">
+    <div class="container text-center">
+        <div class="form-title ">
+            <h2 class="text-dark">Teacher Login</h2>
+            <span class="text-danger"> <b>Use the below form to login as teacher</b></span>
+        </div>
+        <!--teacher login form-->
+            <form method="POST" action="/teacher_login" id="teacher_login" class="form-box">
+                    <div class="form-group mt-3">
+                        <label><b>User Name: </b></label>
+                        <input type="text" name="userName" id="userName" class="form-control mb-3" placeholder="Enter your user name" required>     
+                    </div>
+                    <div class="form-group mt-3">
+                        <label><b>Password: </b></label>
+                        <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Enter your password" required>     
+                    </div>
+                    <span><b>Don't have an account?  </b> <a href="teacher-signup" ><b> Click to Signup</b></a></span>
+                    <br/> <br/>
+                    <button type="submit" class="btn btn-success">Log in</button>
+            </form>
+                    
+        <!--teacher login form-->
+    </div>
+</main>
+<!--Main Site-->
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->

@@ -1,0 +1,42 @@
+<!--inlude header-->
+<%- include('include/_header') %>
+<!--inlude header-->
+
+ <!--Main Site-->
+ <main id="site-main">
+    <div class="container text-center">
+        <div class="form-title ">
+            <h2 class="text-dark">Teacher Signup</h2>
+            <span class="text-danger"> <b>Use the below form to get an access as teacher</b></span>
+        </div>
+        <!--teacher signup form-->
+            <form method="POST" id="teacher_signup" class="form-box">
+                    <div class="form-group mt-1">
+                        <label><b>Name: </b></label>
+                        <input type="text" name="name" id="name" class="form-control mb-1" placeholder="Enter your name" required>     
+                    </div>
+                    <div class="form-group mt-1">
+                        <label><b>Email: </b></label>
+                        <input type="email" name="email" id="email" class="form-control mb-1" placeholder="Enter your email id" required>     
+                    </div>
+                    <div class="form-group mt-1">
+                        <label><b>User Name: </b></label>
+                        <input type="text" name="userName" id="userName" class="form-control mb-1" placeholder="Enter your user name" required>     
+                    </div>
+                    <div class="form-group mt-1">
+                        <label><b>Password: </b></label>
+                        <input type="password" name="password" id="password"class="form-control mb-1" placeholder="Enter your password" required>     
+                    </div>
+                    <span><b>Already have an account?  </b> <a href="teacher-login" ><b> Click to login</b></a></span>
+                    <br/> <br/>
+                    <button type="submit" class="btn btn-success">Signup</button>
+            </form>
+                    
+        <!--teacher signup form-->
+    </div>
+</main>
+<!--Main Site-->
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->

@@ -1,0 +1,27 @@
+{
+  "name": "result_management_system",
+  "version": "1.0.0",
+  "description": "Result management system",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "Mysql"
+  ],
+  "author": "Kunal Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.1.4",
+    "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.2"
+  }
+}

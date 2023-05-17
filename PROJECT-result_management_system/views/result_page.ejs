@@ -1,0 +1,29 @@
+<!--inlude header-->
+<%- include('include/_header') %>
+<!--inlude header-->
+
+<!--Main Site-->
+<main class="mt-5">
+    <div class="container w-25">
+        <a href="student-view-result"><b> << Back </b></a>
+    </div>
+    <div class="container mt-2 w-25" style="background-color:bisque;">
+        <div class="card" style="background-color: antiquewhite;">
+            <h3 class="card-header text-center"><b style="color:darkturquoise;">Your Result</b></h3>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item"><b>Your Roll No:  </b> <b style="color:grey"><%= result[0].rollno %></b></li>
+                    <li class="list-group-item"><b>Your Name:  </b> <b style="color:grey"><%= result[0].name %></b></li>
+                    <li class="list-group-item"><b>Your DOB:  </b> <b style="color:grey"><%= result[0].dob %></b></li>
+                    <li class="list-group-item"><b>Maximum Marks:  </b> <b style="color:grey"><%= result[0].maxmarks %></b></li>
+                    <li class="list-group-item"><b>Obtained marks:  </b> <b style="color:grey"><%= result[0].score %></b></li>
+                  </ul>
+            </div>
+          </div>
+    </div>
+</main>
+<!--Main Site-->
+
+<!--inlude footer-->
+<%- include('include/_footer') %>
+<!--inlude footer-->
