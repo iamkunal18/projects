@@ -1,5 +1,7 @@
 # Virtual-Mouse
-<<<<<<<----------Desktop Navigation With Hand Gesture---------->>>>>>>
+                          <<<<<<<----------Desktop Navigation With Hand Gesture---------->>>>>>>
+
+
 We all wonder it would have been so comfortable if we could control cursor through the use of hand gestures.
 Our proposed project puts forward a hand gesture based system that allows user to control the pc mouse movements through the use of hand movements.
 Our system uses pc webcam in order to detect hand gesture movements.
